@@ -1,0 +1,100 @@
+.mt-50 {
+    margin-top: 50px;
+}
+
+.fab {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.hero-container {
+    background-image: url("../src/Assets/background.svg");
+    background-size: cover;
+    display: flex;
+    min-height: 95vh;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.hero-content-container {
+    height: 100%;
+}
+
+.hero-content-container button {
+    width: 150px;
+}
+
+.hero-tagline {
+    font-size: 70px;
+}
+
+.hero-description {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.hero-banner-img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.services-title {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.progress {
+    width: 100%;
+    max-width: 80px;
+    height: 6px;
+    background: #e1e4e8;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+        90deg,
+        #ffd33d,
+        #ea4aaa 17%,
+        #b34bff 34%,
+        #01feff 51%,
+        #ffd33d 68%,
+        #ea4aaa 85%,
+        #b34bff
+    );
+    background-size: 300% 100%;
+    animation: progress-animation 2s linear infinite;
+}
+
+@keyframes progress-animation {
+    0% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0;
+    }
+}
+
+.services-container {
+    background-image: url("../src/Assets/background.svg");
+    background-size: cover;
+    min-height: 95vh;
+    user-select: none;
+}
+
+.services-card-img {
+    width: 70px;
+    object-fit: contain;
+}
+
+.services-card-description {
+    color: #787878;
+}
