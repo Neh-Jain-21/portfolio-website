@@ -39,7 +39,7 @@ const Portfolio = () => {
 						if (activeTab.type === data.category) {
 							return (
 								<div key={data.id} className="col-lg-4 col-md-6 mb-5 portfolio-item" data-aos="fade-left" data-aos-duration="2000">
-									<img src={require("../../Assets/hero-banner.png")} className="img-fluid" alt="" />
+									<img src={data.image} className="img-fluid" alt="" />
 									<div className="portfolio-info">
 										<h4>{data.name}</h4>
 										<p>{data.category}</p>
@@ -52,7 +52,7 @@ const Portfolio = () => {
 						} else if (activeTab.type === "All") {
 							return (
 								<div key={data.id} className="col-lg-4 col-md-6 mb-5 portfolio-item" data-aos="fade-left" data-aos-duration="2000">
-									<img src={require("../../Assets/hero-banner.png")} className="img-fluid" alt="" />
+									<img src={data.image} className="img-fluid" alt="" />
 									<div className="portfolio-info">
 										<h4>{data.name}</h4>
 										<p>{data.category}</p>

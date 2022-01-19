@@ -4,6 +4,20 @@ import WebDevImage from "src/Assets/web-development.svg";
 // -> PERSONS
 import nehImage from "src/Assets/neh.jpg";
 import tirthImage from "src/Assets/tirth.jpg";
+// -> PORTFOLIO
+import CyanbotImage from "src/Assets/cyanbot.png";
+import ReimagineImage from "src/Assets/reimagine.png";
+import TrilloImage from "src/Assets/trillo.png";
+import NatoursImage from "src/Assets/natours.png";
+import NexterImage from "src/Assets/nexter.png";
+import TodoImage from "src/Assets/todoapp.png";
+import ShoppingWebsiteImage from "src/Assets/shopping-website.png";
+import BusinessWebsiteImage from "src/Assets/business-website.png";
+import AgencyWebsiteImage from "src/Assets/agency-website.png";
+import YogoWebsiteImage from "src/Assets/yogo-website.png";
+import XygoWebsiteImage from "src/Assets/xygo-website.png";
+import TravelWebsiteImage from "src/Assets/travel-website.png";
+import FitnessWebsiteImage from "src/Assets/fitness-website.png";
 
 export const heroData = {
 	title: "Build as per Your Demand",
@@ -66,6 +80,7 @@ export const teamData = [
 		name: "Tirth Radadiya",
 		area: "Full Stack Developer",
 		technologies: "React JS, Node JS, Express JS, MongoDB, MySQL",
+		experience: "1+ Years",
 	},
 	{
 		key: 1,
@@ -73,78 +88,100 @@ export const teamData = [
 		name: "Neh Jain",
 		area: "Full Stack Developer",
 		technologies: "React JS, Node JS, Express JS, MongoDB, MySQL",
+		experience: "2+ Years",
 	},
 ];
 
 export const portfolioData = [
 	{
 		id: 0,
-		name: "First",
+		name: "Cyan Bot",
 		link: "https://neh-jain-21.github.io/cyanbot/",
-		image: "src/Assets/hero-banner.png",
+		image: CyanbotImage,
 		category: "React",
 	},
 	{
 		id: 1,
-		name: "First",
+		name: "Re-Imagine",
 		link: "https://reimagine-code.vercel.app/",
-		image: "src/Assets/hero-banner.png",
+		image: ReimagineImage,
 		category: "React",
 	},
 	{
 		id: 2,
-		name: "First",
-		link: "www.google.com",
-		image: "src/Assets/hero-banner.png",
+		name: "Trillo Website",
+		link: "https://neh-jain-21.github.io/trillo-website/",
+		image: TrilloImage,
 		category: "React",
 	},
 	{
 		id: 3,
-		name: "First",
-		link: "www.google.com",
-		image: "src/Assets/hero-banner.png",
-		category: "Javascript",
+		name: "Natours Wensite",
+		link: "https://neh-jain-21.github.io/natours-website/",
+		image: NatoursImage,
+		category: "React",
 	},
 	{
 		id: 4,
-		name: "Travel Website",
-		link: "https://neh-jain-21.github.io/Travel-Website/",
-		image: "src/Assets/hero-banner.png",
-		category: "Bootstrap",
+		name: "Nexter Website",
+		link: "https://neh-jain-21.github.io/nexter-website/",
+		image: NexterImage,
+		category: "React",
 	},
 	{
 		id: 5,
-		name: "Travel Website",
-		link: "https://neh-jain-21.github.io/Shopping-Website/",
-		image: "src/Assets/hero-banner.png",
-		category: "Bootstrap",
+		name: "Tracker App",
+		link: "https://neh-jain-21.github.io/todo-app/",
+		image: TodoImage,
+		category: "React",
 	},
 	{
 		id: 6,
-		name: "Travel Website",
-		link: "https://neh-jain-21.github.io/Business-Website/",
-		image: "src/Assets/hero-banner.png",
+		name: "Shopping Website",
+		link: "https://neh-jain-21.github.io/Shopping-Website/",
+		image: ShoppingWebsiteImage,
 		category: "Bootstrap",
 	},
 	{
 		id: 7,
-		name: "Travel Website",
-		link: "https://neh-jain-21.github.io/Agency-Website/",
-		image: "src/Assets/hero-banner.png",
+		name: "Business Website",
+		link: "https://neh-jain-21.github.io/Business-Website/",
+		image: BusinessWebsiteImage,
 		category: "Bootstrap",
 	},
 	{
 		id: 8,
-		name: "Travel Website",
-		link: "https://neh-jain-21.github.io/Yogo-Website/",
-		image: "src/Assets/hero-banner.png",
+		name: "Agency Website",
+		link: "https://neh-jain-21.github.io/Agency-Website/",
+		image: AgencyWebsiteImage,
 		category: "Bootstrap",
 	},
 	{
 		id: 9,
-		name: "Travel Website",
+		name: "Yogo Website",
+		link: "https://neh-jain-21.github.io/Yogo-Website/",
+		image: YogoWebsiteImage,
+		category: "Bootstrap",
+	},
+	{
+		id: 10,
+		name: "Xygo Website",
 		link: "https://neh-jain-21.github.io/Xygo-Website/",
-		image: "src/Assets/hero-banner.png",
+		image: XygoWebsiteImage,
+		category: "Bootstrap",
+	},
+	{
+		id: 11,
+		name: "Travel Website",
+		link: "https://neh-jain-21.github.io/Travel-Website/",
+		image: TravelWebsiteImage,
+		category: "Bootstrap",
+	},
+	{
+		id: 12,
+		name: "Fitness Website",
+		link: "https://neh-jain-21.github.io/Fitness-Website/",
+		image: FitnessWebsiteImage,
 		category: "Bootstrap",
 	},
 ];

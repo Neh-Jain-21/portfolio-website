@@ -26,6 +26,7 @@ const Team = () => {
 														<h3>{value.name}</h3>
 														<p>{value.area}</p>
 														<p>{value.technologies}</p>
+														<p>{value.experience}</p>
 													</div>
 												</div>
 											</div>
