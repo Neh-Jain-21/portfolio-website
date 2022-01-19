@@ -16,13 +16,18 @@ const Team = () => {
 						<div data-aos="fade-up-right" className="col-md-6 d-flex flex-column justify-content-center">
 							{teamData.map((value) => {
 								return (
-									<div key={value.key} className="card mb-5">
-										<div className="card-body d-flex">
-											<img src={value.image} className="team-image" alt="" />
-											<div className="ms-4 d-flex flex-column justify-content-center">
-												<h3>{value.name}</h3>
-												<p>{value.area}</p>
-												<p>{value.technologies}</p>
+									<div key={value.key} className="containers-row mb-4">
+										<div className="cards-row">
+											<div className="box-row">
+												<div className="layer-row"></div>
+												<div className="card-body content-row d-flex">
+													<img src={value.image} className="team-image" alt={value.name} />
+													<div className="ms-4 d-flex flex-column justify-content-center">
+														<h3>{value.name}</h3>
+														<p>{value.area}</p>
+														<p>{value.technologies}</p>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>

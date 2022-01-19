@@ -101,7 +101,116 @@ p {
 .services-card-description {
 	color: #787878;
 }
+
+.containers {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* max-width: 100%; */
+	flex-wrap: wrap;
+	/* padding: 40px 0; */
+	/* margin-right: -30px; */
+}
+
+.containers .cards {
+	position: relative;
+	width: 300px;
+	height: 340px;
+	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+	border-radius: 30px;
+}
+
+.containers .cards:hover {
+	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.7), inset -5px -5px 5px rgba(255, 255, 255, 0.7), 5px 5px 5px rgba(0, 0, 0, 0.7), -5px -5px 5px rgba(255, 255, 255, 0.7);
+}
+
+/* .containers .cards {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  background: #ebf5fc;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+} */
+
+/* .containers .cards:hover .box {
+  transform: translateY(-50px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  /* pointer-events: none; 
+} */
+
+.containers .cards .layer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 0%;
+	background: linear-gradient(to bottom, rgb(27, 89, 223), rgb(109, 122, 196));
+	/* background: radial-gradient(#777, #000); */
+	z-index: -1;
+	transition: all 0.2s linear;
+	border-radius: inherit;
+}
+
+.containers .cards:hover .layer {
+	height: 100%;
+	/* transform: scale(1.03); */
+}
+
+.containers .cards .content {
+	padding: 20px;
+	/* max-width: 100%; */
+	text-align: center;
+	z-index: 2;
+}
+
+/* .containers .cards .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(0, 0, 0, 0.02);
+  pointer-events: none;
+} */
+
+/* .containers .cards:hover .box .content h2 {
+  color: rgba(0, 0, 0, 0.05);
+} */
+
+.containers .cards .content h3 {
+	font-size: 1.8em;
+	color: #777;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+.containers .cards:hover .content p {
+	color: #fff;
+	pointer-events: none;
+}
 /* SERVICES END */
+
+.img-container {
+	position: relative;
+	background-color: #01feff;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.features-img {
+	position: absolute;
+	top: 15px;
+	left: 25px;
+
+	font-size: 32px;
+	color: #000;
+}
 
 /* PORTFOLIO START */
 .portfolio-tabs {
@@ -131,6 +240,8 @@ p {
 
 .portfolio-item {
 	position: relative;
+	/* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .5); */
+	border-radius: 10px;
 }
 
 .portfolio-item::before {
@@ -139,8 +250,9 @@ p {
 	position: absolute;
 	/* left: 30px;
     right: 30px; */
-	width: 93.8%;
+	width: 96.8%;
 	height: 100%;
+	border-radius: inherit;
 	/* top: 30px;
     bottom: 30px; */
 	/* transform: scale(0); */
@@ -175,23 +287,69 @@ p {
 }
 
 .portfolio-info a {
-	position: absolute;
-	right: 40px;
 	font-size: 24px;
-	top: calc(50% - 18px);
 	color: #fff;
 	transition: 0.3s;
 }
+
 .portfolio-info a:hover {
 	color: #ffc041;
 }
 /* PORTFOLIO END */
 
+/* Team Start */
 .team-image {
 	width: 100px;
 	object-fit: contain;
 	border-radius: 50%;
 }
+
+.containers-row {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* max-width: 100%; */
+	flex-wrap: wrap;
+	/* padding: 40px 0; */
+	/* margin-right: -30px; */
+}
+
+.containers-row .cards-row {
+	position: relative;
+	/* width: 100px;
+  height: 100px; */
+	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+	border-radius: 30px;
+}
+
+.containers-row .cards-row:hover {
+	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.7), inset -5px -5px 5px rgba(255, 255, 255, 0.7), 5px 5px 5px rgba(0, 0, 0, 0.7), -5px -5px 5px rgba(255, 255, 255, 0.7);
+}
+
+.containers-row .cards-row .layer-row {
+	position: absolute;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgb(27, 89, 223), rgb(109, 122, 196));
+	/* background: radial-gradient(#777, #000); */
+	z-index: -1;
+	transition: all 0.2s linear;
+	border-radius: 30px;
+}
+
+.containers-row .cards-row:hover .layer-row {
+	width: 100%;
+	/* transform: scale(1.03); */
+}
+
+.containers-row .cards-row:hover .content-row p,
+.containers-row .cards-row:hover .content-row h3 {
+	color: #fff;
+	pointer-events: none;
+}
+/* Team End */
 
 /* FOOTER START */
 .footer-container {

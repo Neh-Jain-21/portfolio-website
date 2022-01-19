@@ -17,12 +17,14 @@ const Portfolio = () => {
 	return (
 		<>
 			<div className="container d-flex flex-column align-items-center my-5">
-				<p className="text-center services-title mb-1">Portfolio</p>
-				<div className="progress mb-5">
+				<p className="text-center services-title mb-1" data-aos="fade-left">
+					Portfolio
+				</p>
+				<div className="progress mb-5" data-aos="fade-right">
 					<span className="progress-bar"></span>
 				</div>
 
-				<ul className="d-flex justify-content-center portfolio-tabs">
+				<ul className="d-flex flex-wrap justify-content-center portfolio-tabs">
 					{categories.map((category) => {
 						return (
 							<li className={category.key === activeTab.key ? "active" : ""} key={category.key} onClick={() => setActiveTab(category)}>
@@ -36,7 +38,7 @@ const Portfolio = () => {
 					{portfolioData.map((data) => {
 						if (activeTab.type === data.category) {
 							return (
-								<div key={data.id} className="col-lg-4 col-md-6 mb-5 portfolio-item">
+								<div key={data.id} className="col-lg-4 col-md-6 mb-5 portfolio-item" data-aos="fade-left" data-aos-duration="2000">
 									<img src={require("../../Assets/hero-banner.png")} className="img-fluid" alt="" />
 									<div className="portfolio-info">
 										<h4>{data.name}</h4>
@@ -49,7 +51,7 @@ const Portfolio = () => {
 							);
 						} else if (activeTab.type === "All") {
 							return (
-								<div key={data.id} className="col-lg-4 col-md-6 mb-5 portfolio-item">
+								<div key={data.id} className="col-lg-4 col-md-6 mb-5 portfolio-item" data-aos="fade-left" data-aos-duration="2000">
 									<img src={require("../../Assets/hero-banner.png")} className="img-fluid" alt="" />
 									<div className="portfolio-info">
 										<h4>{data.name}</h4>

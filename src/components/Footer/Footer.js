@@ -7,7 +7,7 @@ const Footer = () => {
 						<div className="col-12 col-sm-6 col-md-4 mt-5">
 							<div className="d-flex flex-column">
 								<h3>About Us</h3>
-								<p>Pixiebytez Innovations Provides One-Stop Software Solution For All Your Technological Needs</p>
+								<p>We Provide Thorough Solution for your all web Development needs</p>
 								<div className="d-flex mt-3">
 									<h2>
 										<i className="bi bi-facebook"></i>
