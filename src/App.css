@@ -78,6 +78,17 @@ p {
 	width: 100%;
 	object-fit: contain;
 }
+
+@media screen and (max-width: 768px) {
+	.hero-tagline {
+		font-size: 50px;
+	}
+
+	.hero-description {
+		font-size: 15px;
+		font-weight: 500;
+	}
+}
 /* HERO END */
 
 /* SERVICES START */
@@ -87,7 +98,7 @@ p {
 }
 
 .services-container {
-	background-image: url("../src/Assets/background.svg");
+	background-image: url("../src/Assets/services-bg.jpg");
 	background-size: cover;
 	min-height: 95vh;
 	user-select: none;
@@ -109,20 +120,20 @@ p {
 	/* max-width: 100%; */
 	flex-wrap: wrap;
 	/* padding: 40px 0; */
-	/* margin-right: -30px; */
+	margin-right: 0px;
 }
 
 .containers .cards {
 	position: relative;
 	width: 300px;
-	height: 340px;
+	height: 300px;
 	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
 	border-radius: 30px;
 }
 
-.containers .cards:hover {
+/* .containers .cards:hover {
 	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.7), inset -5px -5px 5px rgba(255, 255, 255, 0.7), 5px 5px 5px rgba(0, 0, 0, 0.7), -5px -5px 5px rgba(255, 255, 255, 0.7);
-}
+} */
 
 /* .containers .cards {
   position: absolute;
@@ -189,15 +200,15 @@ p {
 	transition: 0.5s;
 }
 
-.containers .cards:hover .content p {
+/* .containers .cards:hover .content p {
 	color: #fff;
 	pointer-events: none;
-}
+} */
 /* SERVICES END */
 
 .img-container {
 	position: relative;
-	background-color: #01feff;
+	background-color: #BBC6D7;
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
@@ -209,7 +220,7 @@ p {
 	left: 25px;
 
 	font-size: 32px;
-	color: #000;
+	color: black;
 }
 
 /* PORTFOLIO START */
@@ -234,31 +245,22 @@ p {
 
 .portfolio-tabs li:hover,
 .portfolio-tabs .active {
-	color: #96b5dd;
-	border-color: #96b5dd;
+	color: #BBC6D7;
+	border-color: #BBC6D7;
 }
 
 .portfolio-item {
 	position: relative;
-	/* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .5); */
-	border-radius: 10px;
 }
 
 .portfolio-item::before {
 	content: "";
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.4);
 	position: absolute;
-	/* left: 30px;
-    right: 30px; */
-	width: 96.8%;
+	width: 93.3%;
 	height: 100%;
-	border-radius: inherit;
-	/* top: 30px;
-    bottom: 30px; */
-	/* transform: scale(0); */
 	transition: all ease-in-out 0.3s;
 	z-index: 2;
-	/* opacity: 0; */
 }
 
 .portfolio-info {
@@ -293,7 +295,7 @@ p {
 }
 
 .portfolio-info a:hover {
-	color: #ffc041;
+	color: #BBC6D7;
 }
 /* PORTFOLIO END */
 
@@ -323,9 +325,9 @@ p {
 	border-radius: 30px;
 }
 
-.containers-row .cards-row:hover {
+/* .containers-row .cards-row:hover {
 	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.7), inset -5px -5px 5px rgba(255, 255, 255, 0.7), 5px 5px 5px rgba(0, 0, 0, 0.7), -5px -5px 5px rgba(255, 255, 255, 0.7);
-}
+} */
 
 .containers-row .cards-row .layer-row {
 	position: absolute;
@@ -335,7 +337,7 @@ p {
 	background: linear-gradient(to bottom, rgb(27, 89, 223), rgb(109, 122, 196));
 	/* background: radial-gradient(#777, #000); */
 	z-index: -1;
-	transition: all 0.2s linear;
+	transition: all 0.5s ease;
 	border-radius: 30px;
 }
 
@@ -346,6 +348,7 @@ p {
 
 .containers-row .cards-row:hover .content-row p,
 .containers-row .cards-row:hover .content-row h3 {
+	transition: all 0.5s ease;
 	color: #fff;
 	pointer-events: none;
 }

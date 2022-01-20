@@ -11,21 +11,23 @@ const Services = () => {
 						<span className="progress-bar"></span>
 					</div>
 
-					<div className="row">
-						{servicesData.map((value) => {
-							return (
-								<div key={value.key} className="containers col-md-4 mb-5">
-									<div className="cards">
-										<div className="layers"></div>
-										<div data-aos="fade-left" data-aos-duration="2000" className="content">
-											<img src={value.image} className="services-card-img" alt="" />
-											<h4 className="mt-4">{value.title}</h4>
-											<p className="text-center">{value.description}</p>
+					<div className="container-fluid">
+						<div className="row">
+							{servicesData.map((value) => {
+								return (
+									<div key={value.key} className="containers col-md-4 mb-5">
+										<div className="cards">
+											<div className="layers"></div>
+											<div data-aos="fade-left" data-aos-duration="2000" className="content">
+												<img src={value.image} className="services-card-img" alt="" />
+												<h4 className="mt-4">{value.title}</h4>
+												<p className="text-center">{value.description}</p>
+											</div>
 										</div>
 									</div>
-								</div>
-							);
-						})}
+								);
+							})}
+						</div>
 					</div>
 				</div>
 			</div>

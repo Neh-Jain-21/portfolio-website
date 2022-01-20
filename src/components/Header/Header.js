@@ -1,9 +1,9 @@
 const Header = () => {
 	return (
 		<>
-			<nav className="navbar navbar-expand-lg">
+			<nav className="navbar navbar-expand-lg navbar-light bg-light">
 				<div className="container">
-					<p className="navbar-brand mb-0">Navbar</p>
+					<p className="navbar-brand mb-0">Portfolio</p>
 					<button
 						className="navbar-toggler"
 						type="button"

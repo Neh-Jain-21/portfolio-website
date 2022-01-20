@@ -4,7 +4,7 @@ const ScrollTop = () => {
 	};
 
 	return (
-		<button className="btn btn-primary btn-lg rounded-circle fab" onClick={handleScroll}>
+		<button className="btn-primary btn-lg rounded-circle fab" onClick={handleScroll}>
 			^
 		</button>
 	);
