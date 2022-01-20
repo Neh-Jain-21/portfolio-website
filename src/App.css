@@ -51,7 +51,8 @@ p {
 	background-image: url("../src/Assets/background.svg");
 	background-size: cover;
 	display: flex;
-	min-height: 95vh;
+	min-height: 100vh;
+	/* min-height: 95vh; */
 	justify-content: center;
 	align-items: center;
 	user-select: none;
@@ -208,7 +209,7 @@ p {
 
 .img-container {
 	position: relative;
-	background-color: #BBC6D7;
+	background-color: #bbc6d7;
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
@@ -245,8 +246,8 @@ p {
 
 .portfolio-tabs li:hover,
 .portfolio-tabs .active {
-	color: #BBC6D7;
-	border-color: #BBC6D7;
+	color: #bbc6d7;
+	border-color: #bbc6d7;
 }
 
 .portfolio-item {
@@ -295,7 +296,7 @@ p {
 }
 
 .portfolio-info a:hover {
-	color: #BBC6D7;
+	color: #bbc6d7;
 }
 /* PORTFOLIO END */
 

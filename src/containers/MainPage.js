@@ -11,13 +11,13 @@ import Team from "src/components/Team/Team";
 const MainPage = () => {
 	return (
 		<>
-			<Header />
+			{/* <Header /> */}
 			<Hero />
-			<Services />
-			<Features />
+			{/* <Services /> */}
+			{/* <Features /> */}
 			<Portfolio />
-			<Team />
-			<Footer />
+			{/* <Team /> */}
+			{/* <Footer /> */}
 			<ScrollTop />
 		</>
 	);
