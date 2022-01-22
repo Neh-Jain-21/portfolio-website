@@ -1,15 +1,7 @@
 // IMAGES
-// -> SERVICES
-import WebDevImage from "src/Assets/web-development.svg";
-// -> PERSONS
-import nehImage from "src/Assets/neh.jpg";
-import tirthImage from "src/Assets/tirth.jpg";
 // -> PORTFOLIO
 import CyanbotImage from "src/Assets/cyanbot.png";
 import ReimagineImage from "src/Assets/reimagine.png";
-import TrilloImage from "src/Assets/trillo.png";
-import NatoursImage from "src/Assets/natours.png";
-import NexterImage from "src/Assets/nexter.png";
 import TodoImage from "src/Assets/todoapp.png";
 import ShoppingWebsiteImage from "src/Assets/shopping-website.png";
 import BusinessWebsiteImage from "src/Assets/business-website.png";

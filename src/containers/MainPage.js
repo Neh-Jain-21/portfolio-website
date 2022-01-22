@@ -40,7 +40,7 @@ const MainPage = () => {
 			{data.heroData.visible && <Hero data={data.heroData.content} />}
 			{data.servicesData.visible && <Services data={data.servicesData.content} />}
 			{data.featuresData.visible && <Features data={data.featuresData.content} />}
-			{/* <Portfolio /> */}
+			<Portfolio />
 			{data.teamData.visible && <Team data={data.teamData.content} />}
 			{data.footerData.visible && <Footer data={data.footerData.content} />}
 			<ScrollTop />

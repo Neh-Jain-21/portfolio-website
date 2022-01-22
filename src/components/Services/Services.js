@@ -16,8 +16,7 @@ const Services = (props) => {
 										<div className="cards">
 											<div className="layers"></div>
 											<div data-aos="fade-left" data-aos-duration="2000" className="content">
-												{/* <div className="services-card-img" dangerouslySetInnerHTML={{ __html: value.image }}></div> */}
-												<img className="services-card-img" src={`data:image/svg+xml;base64,${value.image}`} alt="" />
+												<img className="services-card-img" src={require(`src/Assets/${value.image}`)} alt="" />
 												<h4 className="mt-4">{value.title}</h4>
 												<p className="text-center">{value.description}</p>
 											</div>

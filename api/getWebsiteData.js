@@ -1,10 +1,3 @@
-const { readFileSync } = require("fs");
-const { join } = require("path");
-
-const readFile = (name) => {
-	return readFileSync(join(__dirname, "_files", name), "base64");
-};
-
 export default (req, res) => {
 	const data = {
 		headerData: {
@@ -25,19 +18,19 @@ export default (req, res) => {
 			content: [
 				{
 					key: 0,
-					image: readFile("web-development.svg"),
+					image: "web-development.svg",
 					title: "Full Stack Development",
 					description: "Full Stack Web Application Development using latest javascript framework React with backend Rest Apis on Node.js and SQL/No-SQL Database",
 				},
 				{
 					key: 1,
-					image: readFile("web-development.svg"),
+					image: "web-development.svg",
 					title: "Front End Development",
 					description: `Front End Development with the technologies HTML5, CSS3, SCSS, JAVASCRIPT, REACTJS, BOOTSTRAP, MATERIAL-UI, ANTD.`,
 				},
 				{
 					key: 2,
-					image: readFile("web-development.svg"),
+					image: "web-development.svg",
 					title: "Backend Development",
 					description: "Backend Development using latest javascript framework Node.js and MySQL and MongoDB Database",
 				},
@@ -79,7 +72,7 @@ export default (req, res) => {
 			content: [
 				{
 					key: 0,
-					image: readFile("tirth.jpg"),
+					image: "tirth.jpg",
 					name: "Tirth Radadiya",
 					area: "Full Stack Developer",
 					technologies: "React JS, Node JS, Express JS, MongoDB, MySQL",
@@ -87,7 +80,7 @@ export default (req, res) => {
 				},
 				{
 					key: 1,
-					image: readFile("neh.jpg"),
+					image: "neh.jpg",
 					name: "Neh Jain",
 					area: "Full Stack Developer",
 					technologies: "React JS, Node JS, Express JS, MongoDB, MySQL",

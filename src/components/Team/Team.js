@@ -19,7 +19,7 @@ const Team = ({ data }) => {
 											<div className="box-row">
 												<div className="layer-row"></div>
 												<div className="card-body content-row d-flex">
-													<img src={`data:image/*;base64,${value.image}`} className="team-image" alt={value.name} />
+													<img src={require(`src/Assets/${value.image}`)} className="team-image" alt={value.name} />
 													<div className="ms-4 d-flex flex-column justify-content-center">
 														<h3>{value.name}</h3>
 														<p>{value.area}</p>
