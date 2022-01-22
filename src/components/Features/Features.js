@@ -1,7 +1,4 @@
-// UTILS
-import { featuresData } from "src/utils/Constants";
-
-const Features = () => {
+const Features = ({ data }) => {
 	return (
 		<>
 			<div className="container d-flex flex-column align-items-center my-5">
@@ -12,7 +9,7 @@ const Features = () => {
 					<span className="progress-bar"></span>
 				</div>
 				<div className="row">
-					{featuresData.map((value) => {
+					{data.map((value) => {
 						return (
 							<div key={value.key} className="col-md-3 mb-4 d-flex flex-column align-items-center" data-aos="zoom-out-down">
 								{/* <img
