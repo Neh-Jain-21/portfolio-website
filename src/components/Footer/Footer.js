@@ -1,4 +1,4 @@
-const Footer = () => {
+const Footer = ({ data }) => {
 	return (
 		<>
 			<div className="container-fluid footer-container mt-5 py-5">
@@ -7,13 +7,16 @@ const Footer = () => {
 						<div className="col-12 col-sm-6 col-md-4 mt-5">
 							<div className="d-flex flex-column">
 								<h3>About Us</h3>
-								<p>We Provide Thorough Solution for your all web Development needs</p>
+								<p>{data.aboutUs.title}</p>
 								<div className="d-flex mt-3">
 									<h2>
-										<i className="bi bi-facebook"></i>
-										<i className="ms-3 bi bi-twitter"></i>
-										<i className="ms-3 bi bi-linkedin"></i>
-										<i className="ms-3 bi bi-instagram"></i>
+										{data.aboutUs.socialMedia.map((value) => {
+											return (
+												<>
+													<i style={{ cursor: "pointer" }} onClick={() => window.open(value.link, "_blank")} className={`me-3 bi ${value.logo}`}></i>
+												</>
+											);
+										})}
 									</h2>
 								</div>
 							</div>
@@ -21,9 +24,9 @@ const Footer = () => {
 						<div className="col-12 col-sm-6 col-md-4 mt-5">
 							<div className="d-flex flex-column">
 								<h3>Featured Service</h3>
-								<p className="mb-1">App Development</p>
-								<p className="mb-1">Web Development</p>
-								<p className="mb-1">Backend Development</p>
+								{data.services.map((value) => (
+									<p className="mb-1">{value.title}</p>
+								))}
 							</div>
 						</div>
 						<div className="col-12 col-sm-6 col-md-4 mt-5">
@@ -35,8 +38,9 @@ const Footer = () => {
 									</h4>
 									<div className="d-flex flex-column">
 										<p>Phone</p>
-										<p>+91 123456789</p>
-										<p>+91 123456789</p>
+										{data.contact.phone.map((value) => (
+											<p>{value}</p>
+										))}
 									</div>
 								</div>
 								<div className="d-flex mt-3">
@@ -45,7 +49,9 @@ const Footer = () => {
 									</h4>
 									<div className="d-flex flex-column">
 										<p>Email</p>
-										<p>info@email.com</p>
+										{data.contact.email.map((value) => (
+											<p>{value}</p>
+										))}
 									</div>
 								</div>
 								<div className="d-flex mt-3">
@@ -54,7 +60,7 @@ const Footer = () => {
 									</h4>
 									<div className="d-flex flex-column">
 										<p>Address</p>
-										<p>Currently Work From Home</p>
+										<p>{data.contact.address}</p>
 									</div>
 								</div>
 							</div>

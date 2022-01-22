@@ -99,6 +99,9 @@ p {
 }
 
 .services-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	background-image: url("../src/Assets/services-bg.jpg");
 	background-size: cover;
 	min-height: 95vh;

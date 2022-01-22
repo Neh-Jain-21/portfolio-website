@@ -1,9 +1,9 @@
-const Header = () => {
+const Header = ({ data }) => {
 	return (
 		<>
 			<nav className="navbar navbar-expand-lg navbar-light bg-light">
 				<div className="container">
-					<p className="navbar-brand mb-0">Portfolio</p>
+					<p className="navbar-brand mb-0">{data.title}</p>
 					<button
 						className="navbar-toggler"
 						type="button"

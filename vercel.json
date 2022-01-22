@@ -1,0 +1,7 @@
+{
+	"functions": {
+		"api/getWebsiteData.js": {
+			"includeFiles": "_files/**"
+		}
+	}
+}
