@@ -11,11 +11,7 @@ const Footer = ({ data }) => {
 								<div className="d-flex mt-3">
 									<h2>
 										{data.aboutUs.socialMedia.map((value) => {
-											return (
-												<>
-													<i style={{ cursor: "pointer" }} onClick={() => window.open(value.link, "_blank")} className={`me-3 bi ${value.logo}`}></i>
-												</>
-											);
+											return <i key={value.logo} style={{ cursor: "pointer" }} onClick={() => window.open(value.link, "_blank")} className={`me-3 bi ${value.logo}`}></i>;
 										})}
 									</h2>
 								</div>
@@ -25,7 +21,9 @@ const Footer = ({ data }) => {
 							<div className="d-flex flex-column">
 								<h3>Featured Service</h3>
 								{data.services.map((value) => (
-									<p className="mb-1">{value.title}</p>
+									<p key={value.title} className="mb-1">
+										{value.title}
+									</p>
 								))}
 							</div>
 						</div>
@@ -38,8 +36,8 @@ const Footer = ({ data }) => {
 									</h4>
 									<div className="d-flex flex-column">
 										<p>Phone</p>
-										{data.contact.phone.map((value) => (
-											<p>{value}</p>
+										{data.contact.phone.map((value, index) => (
+											<p key={index}>{value}</p>
 										))}
 									</div>
 								</div>
@@ -50,7 +48,7 @@ const Footer = ({ data }) => {
 									<div className="d-flex flex-column">
 										<p>Email</p>
 										{data.contact.email.map((value) => (
-											<p>{value}</p>
+											<p key={value}>{value}</p>
 										))}
 									</div>
 								</div>
